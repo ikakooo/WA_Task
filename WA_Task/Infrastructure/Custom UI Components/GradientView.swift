@@ -45,7 +45,7 @@ final class GradientView: UIView {
                                 y: CGFloat(0),
                                 width: superview!.frame.size.width,
                                 height: superview!.frame.size.height)
-        gradient.colors = [startColor.cgColor, endColor.cgColor, endColor.cgColor]
+        gradient.colors = [startColor.cgColor, endColor.cgColor]
         gradient.zPosition = -1
         layer.addSublayer(gradient)
     }

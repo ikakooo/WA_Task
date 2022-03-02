@@ -40,12 +40,15 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Log in">
                                             <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="31"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onLoginButtonClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="19a-Df-1Su"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0P-DE-GYV">
-                                        <rect key="frame" x="40" y="715" width="334" height="45"/>
+                                        <rect key="frame" x="40" y="700" width="334" height="60"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Dnl-1J-Ffa"/>
+                                            <constraint firstAttribute="height" constant="60" id="Dnl-1J-Ffa"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
@@ -57,6 +60,9 @@
                                                 <integer key="value" value="19"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCreateAccountClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="85t-Jr-vJL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
