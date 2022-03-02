@@ -18,6 +18,9 @@
 		3B1FE30027CF6D4300707E20 /* WA_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE2FF27CF6D4300707E20 /* WA_TaskUITests.swift */; };
 		3B1FE30227CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE30127CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift */; };
 		3B1FE31827CF726700707E20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE31727CF726700707E20 /* User.swift */; };
+		3B1FE31D27CF73E000707E20 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE31C27CF73E000707E20 /* WelcomeViewController.swift */; };
+		3B1FE31F27CF73F000707E20 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1FE31E27CF73F000707E20 /* WelcomeViewController.storyboard */; };
+		3B1FE32227CF830500707E20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE32127CF830500707E20 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		3B1FE2FF27CF6D4300707E20 /* WA_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WA_TaskUITests.swift; sourceTree = "<group>"; };
 		3B1FE30127CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WA_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3B1FE31727CF726700707E20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B1FE31C27CF73E000707E20 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3B1FE31E27CF73F000707E20 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		3B1FE32127CF830500707E20 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		3B1FE31127CF705E00707E20 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FE32027CF82EC00707E20 /* Custom UI Components */,
 				3B1FE31627CF725300707E20 /* Model */,
 				3B1FE31427CF70BC00707E20 /* Managers */,
 			);
@@ -175,6 +182,7 @@
 		3B1FE31327CF708800707E20 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FE31927CF738300707E20 /* Welcome Scene */,
 				3B1FE2DF27CF6D4100707E20 /* ViewController.swift */,
 				3B1FE2E127CF6D4100707E20 /* Main.storyboard */,
 			);
@@ -203,6 +211,39 @@
 				3B1FE31727CF726700707E20 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3B1FE31927CF738300707E20 /* Welcome Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31B27CF73A100707E20 /* View */,
+				3B1FE31A27CF739B00707E20 /* ViewModel */,
+			);
+			path = "Welcome Scene";
+			sourceTree = "<group>";
+		};
+		3B1FE31A27CF739B00707E20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B1FE31B27CF73A100707E20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31C27CF73E000707E20 /* WelcomeViewController.swift */,
+				3B1FE31E27CF73F000707E20 /* WelcomeViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B1FE32027CF82EC00707E20 /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE32127CF830500707E20 /* GradientView.swift */,
+			);
+			path = "Custom UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1FE31F27CF73F000707E20 /* WelcomeViewController.storyboard in Resources */,
 				3B1FE2EB27CF6D4300707E20 /* LaunchScreen.storyboard in Resources */,
 				3B1FE2E827CF6D4300707E20 /* Assets.xcassets in Resources */,
 				3B1FE2E327CF6D4100707E20 /* Main.storyboard in Resources */,
@@ -339,6 +381,8 @@
 				3B1FE2E027CF6D4100707E20 /* ViewController.swift in Sources */,
 				3B1FE2DC27CF6D4100707E20 /* AppDelegate.swift in Sources */,
 				3B1FE2E627CF6D4100707E20 /* WA_Task.xcdatamodeld in Sources */,
+				3B1FE31D27CF73E000707E20 /* WelcomeViewController.swift in Sources */,
+				3B1FE32227CF830500707E20 /* GradientView.swift in Sources */,
 				3B1FE31827CF726700707E20 /* User.swift in Sources */,
 				3B1FE2DE27CF6D4100707E20 /* SceneDelegate.swift in Sources */,
 			);
