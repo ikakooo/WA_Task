@@ -17,6 +17,7 @@
 		3B1FE2F627CF6D4300707E20 /* WA_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE2F527CF6D4300707E20 /* WA_TaskTests.swift */; };
 		3B1FE30027CF6D4300707E20 /* WA_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE2FF27CF6D4300707E20 /* WA_TaskUITests.swift */; };
 		3B1FE30227CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE30127CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift */; };
+		3B1FE31827CF726700707E20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE31727CF726700707E20 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3B1FE2FB27CF6D4300707E20 /* WA_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WA_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1FE2FF27CF6D4300707E20 /* WA_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WA_TaskUITests.swift; sourceTree = "<group>"; };
 		3B1FE30127CF6D4300707E20 /* WA_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WA_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B1FE31727CF726700707E20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,11 @@
 		3B1FE2DA27CF6D4100707E20 /* WA_Task */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FE31227CF706C00707E20 /* App */,
+				3B1FE31127CF705E00707E20 /* Infrastructure */,
+				3B1FE31027CF705100707E20 /* Presentation */,
 				3B1FE30F27CF6D9900707E20 /* Resources */,
 				3B1FE30E27CF6D7500707E20 /* Supporting Files */,
-				3B1FE2DB27CF6D4100707E20 /* AppDelegate.swift */,
-				3B1FE2DD27CF6D4100707E20 /* SceneDelegate.swift */,
-				3B1FE2DF27CF6D4100707E20 /* ViewController.swift */,
-				3B1FE2E127CF6D4100707E20 /* Main.storyboard */,
-				3B1FE2E427CF6D4100707E20 /* WA_Task.xcdatamodeld */,
 			);
 			path = WA_Task;
 			sourceTree = "<group>";
@@ -144,6 +144,65 @@
 				3B1FE2E727CF6D4300707E20 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B1FE31027CF705100707E20 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31327CF708800707E20 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3B1FE31127CF705E00707E20 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31627CF725300707E20 /* Model */,
+				3B1FE31427CF70BC00707E20 /* Managers */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3B1FE31227CF706C00707E20 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE2DB27CF6D4100707E20 /* AppDelegate.swift */,
+				3B1FE2DD27CF6D4100707E20 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B1FE31327CF708800707E20 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE2DF27CF6D4100707E20 /* ViewController.swift */,
+				3B1FE2E127CF6D4100707E20 /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3B1FE31427CF70BC00707E20 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31527CF70CE00707E20 /* Local Database */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3B1FE31527CF70CE00707E20 /* Local Database */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE2E427CF6D4100707E20 /* WA_Task.xcdatamodeld */,
+			);
+			path = "Local Database";
+			sourceTree = "<group>";
+		};
+		3B1FE31627CF725300707E20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE31727CF726700707E20 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +339,7 @@
 				3B1FE2E027CF6D4100707E20 /* ViewController.swift in Sources */,
 				3B1FE2DC27CF6D4100707E20 /* AppDelegate.swift in Sources */,
 				3B1FE2E627CF6D4100707E20 /* WA_Task.xcdatamodeld in Sources */,
+				3B1FE31827CF726700707E20 /* User.swift in Sources */,
 				3B1FE2DE27CF6D4100707E20 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WA_Task/Info.plist;
+				INFOPLIST_FILE = "WA_Task/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -487,7 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WA_Task/Info.plist;
+				INFOPLIST_FILE = "WA_Task/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
