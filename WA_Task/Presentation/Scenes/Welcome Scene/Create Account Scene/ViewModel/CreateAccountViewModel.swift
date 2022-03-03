@@ -14,6 +14,8 @@ protocol  CreateAccountViewModelProtocol: AnyObject {
 
 class CreateAccountViewModel: CreateAccountViewModelProtocol {
     
-    
+    func registerUser(){
+        
+    }
     
 }

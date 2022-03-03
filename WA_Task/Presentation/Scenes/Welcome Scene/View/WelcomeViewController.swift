@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController, LoginDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.tintColor = .black
     }
     @IBAction func onLoginButtonClick(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LogInViewController", bundle: nil)

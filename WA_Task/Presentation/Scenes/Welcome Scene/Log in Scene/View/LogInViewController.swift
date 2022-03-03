@@ -41,8 +41,7 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func onLoginButtonClick(_ sender: Any) {
-    
-        
+        dataService.tryLogIn()
     }
     
     @IBAction func onCloseButtonClick(_ sender: Any) {

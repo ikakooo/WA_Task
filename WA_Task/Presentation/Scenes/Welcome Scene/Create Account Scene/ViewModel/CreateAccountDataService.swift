@@ -10,7 +10,7 @@ import UIKit
 class CreateAccountDataService: NSObject {
     
     
-    private var controller: UIViewController!
+    private unowned var controller: UIViewController!
     private var viewModel: CreateAccountViewModelProtocol!
     
     private var usernameLabel: FloatingLabelInput!
@@ -63,8 +63,16 @@ class CreateAccountDataService: NSObject {
         password.count > 7
         else {
             self.controller.openAlert(title: "Password and ConfirmPassword must be same and minimum 8 Character!", message: "", closeButtonTitle: "Try again"){}
-            return}
+            return }
         
+        UsersCoreDataManager.shared.saveUser(info: User(username: username,email: email, password: password))
+        
+        self.controller.openAlert(title: "Successfully registered", message: "", closeButtonTitle: "OK"){
+            self.controller.dismiss(animated: true, completion: {
+                self.logInDelegate?.logIn()
+            })
+        }
+      
     }
     
     func updateUsernameInputStatus(){

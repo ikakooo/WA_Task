@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewDataService:NSObject {
+class LogInViewDataService: NSObject {
     
     
     private var controller: UIViewController!
@@ -49,6 +49,16 @@ class LogInViewDataService:NSObject {
         else {
             self.controller.openAlert(title: "Password must be minimum 8 Character!", message: "", closeButtonTitle: "Try again"){}
             return}
+       
+        if UsersCoreDataManager.shared.tryFetch(user: User(email: email, password: password)) {
+            self.controller.openAlert(title: "Yes! correct", message: "", closeButtonTitle: "OK"){
+                self.controller.dismiss(animated: true, completion: {
+                    self.logInDelegate?.logIn()
+                })
+            }
+        }else{
+            self.controller.openAlert(title: "Email or Password is incorrect", message: "", closeButtonTitle: "Try again"){}
+        }
     }
     
     func updateEmailInputStatus(){
