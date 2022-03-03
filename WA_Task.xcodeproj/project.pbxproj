@@ -26,6 +26,11 @@
 		3B1FE33027CF907300707E20 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1FE32F27CF907300707E20 /* CreateAccountViewController.storyboard */; };
 		3B1FE33327CF91F800707E20 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FE33227CF91F800707E20 /* UsersListViewController.swift */; };
 		3B1FE33527CF920300707E20 /* UsersListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */; };
+		3B4DC16E27D0FE0A00D00A99 /* CreateAccountDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC16D27D0FE0A00D00A99 /* CreateAccountDataService.swift */; };
+		3B4DC17027D0FE4F00D00A99 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC16F27D0FE4F00D00A99 /* CreateAccountViewModel.swift */; };
+		3B4DC17327D1004E00D00A99 /* DialogAlertsForActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17227D1004E00D00A99 /* DialogAlertsForActions.swift */; };
+		3B4DC17627D1014500D00A99 /* Validator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */; };
+		3B4DC17827D1039300D00A99 /* LogInViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		3B1FE32F27CF907300707E20 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
 		3B1FE33227CF91F800707E20 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersListViewController.storyboard; sourceTree = "<group>"; };
+		3B4DC16D27D0FE0A00D00A99 /* CreateAccountDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountDataService.swift; sourceTree = "<group>"; };
+		3B4DC16F27D0FE4F00D00A99 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		3B4DC17227D1004E00D00A99 /* DialogAlertsForActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertsForActions.swift; sourceTree = "<group>"; };
+		3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validator+Extensions.swift"; sourceTree = "<group>"; };
+		3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +183,11 @@
 		3B1FE31127CF705E00707E20 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3B4DC17127D1003B00D00A99 /* Dialog Alerts */,
 				3B1FE32027CF82EC00707E20 /* Custom UI Components */,
 				3B1FE31627CF725300707E20 /* Model */,
 				3B1FE31427CF70BC00707E20 /* Managers */,
+				3B4DC17427D1011C00D00A99 /* Extensions */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -193,8 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				3B1FE33127CF919100707E20 /* Users List Scene */,
-				3B1FE32C27CF904800707E20 /* Create Account Scene */,
-				3B1FE32327CF8A7E00707E20 /* Log in Scene */,
 				3B1FE31927CF738300707E20 /* Welcome Scene */,
 			);
 			path = Scenes;
@@ -227,6 +237,8 @@
 		3B1FE31927CF738300707E20 /* Welcome Scene */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FE32C27CF904800707E20 /* Create Account Scene */,
+				3B1FE32327CF8A7E00707E20 /* Log in Scene */,
 				3B1FE31B27CF73A100707E20 /* View */,
 				3B1FE31A27CF739B00707E20 /* ViewModel */,
 			);
@@ -270,6 +282,7 @@
 		3B1FE32427CF8A8F00707E20 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,8 +299,8 @@
 		3B1FE32C27CF904800707E20 /* Create Account Scene */ = {
 			isa = PBXGroup;
 			children = (
-				3B1FE32D27CF905C00707E20 /* CreateAccountViewController.swift */,
-				3B1FE32F27CF907300707E20 /* CreateAccountViewController.storyboard */,
+				3B4DC16C27D0FDA400D00A99 /* View */,
+				3B4DC16B27D0FD9E00D00A99 /* ViewModel */,
 			);
 			path = "Create Account Scene";
 			sourceTree = "<group>";
@@ -299,6 +312,40 @@
 				3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */,
 			);
 			path = "Users List Scene";
+			sourceTree = "<group>";
+		};
+		3B4DC16B27D0FD9E00D00A99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DC16D27D0FE0A00D00A99 /* CreateAccountDataService.swift */,
+				3B4DC16F27D0FE4F00D00A99 /* CreateAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B4DC16C27D0FDA400D00A99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE32D27CF905C00707E20 /* CreateAccountViewController.swift */,
+				3B1FE32F27CF907300707E20 /* CreateAccountViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B4DC17127D1003B00D00A99 /* Dialog Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DC17227D1004E00D00A99 /* DialogAlertsForActions.swift */,
+			);
+			path = "Dialog Alerts";
+			sourceTree = "<group>";
+		};
+		3B4DC17427D1011C00D00A99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,13 +482,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4DC17627D1014500D00A99 /* Validator+Extensions.swift in Sources */,
 				3B1FE2DC27CF6D4100707E20 /* AppDelegate.swift in Sources */,
 				3B1FE2E627CF6D4100707E20 /* WA_Task.xcdatamodeld in Sources */,
 				3B1FE31D27CF73E000707E20 /* WelcomeViewController.swift in Sources */,
 				3B1FE32727CF8B8C00707E20 /* LogInViewController.swift in Sources */,
+				3B4DC17027D0FE4F00D00A99 /* CreateAccountViewModel.swift in Sources */,
 				3B1FE32227CF830500707E20 /* GradientView.swift in Sources */,
+				3B4DC17327D1004E00D00A99 /* DialogAlertsForActions.swift in Sources */,
+				3B4DC17827D1039300D00A99 /* LogInViewDataService.swift in Sources */,
 				3B1FE31827CF726700707E20 /* User.swift in Sources */,
 				3B1FE32E27CF905C00707E20 /* CreateAccountViewController.swift in Sources */,
+				3B4DC16E27D0FE0A00D00A99 /* CreateAccountDataService.swift in Sources */,
 				3B1FE33327CF91F800707E20 /* UsersListViewController.swift in Sources */,
 				3B1FE2DE27CF6D4100707E20 /* SceneDelegate.swift in Sources */,
 				3B1FE32B27CF8C3900707E20 /* FloatingLabelInput.swift in Sources */,

@@ -65,6 +65,9 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ActionOnUsernameTextChange:" destination="QUp-ZA-JdX" eventType="editingChanged" id="CgX-Rt-7Xh"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-yb-Ypy" customClass="FloatingLabelInput" customModule="WA_Task" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="244" width="325" height="50"/>
@@ -94,6 +97,9 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ActionOnEmailTextChange:" destination="QUp-ZA-JdX" eventType="editingChanged" id="fq4-cP-jTP"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hfc-0f-hpg" customClass="FloatingLabelInput" customModule="WA_Task" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="319" width="325" height="50"/>
@@ -123,6 +129,9 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ActionOnPasswordTextChange:" destination="QUp-ZA-JdX" eventType="editingChanged" id="SOD-kf-ff9"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzX-oV-upf" customClass="FloatingLabelInput" customModule="WA_Task" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="394" width="325" height="50"/>
@@ -152,6 +161,9 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ActionOnConfirmPasswordTextChange:" destination="QUp-ZA-JdX" eventType="editingChanged" id="S41-sx-HLg"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiw-Kh-eje">
                                                 <rect key="frame" x="25" y="464" width="325" height="60"/>
@@ -169,6 +181,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ActionOnRegisterClick:" destination="QUp-ZA-JdX" eventType="touchUpInside" id="W9O-KX-NJA"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-92-Oi8">
                                                 <rect key="frame" x="61.666666666666671" y="534" width="251.66666666666663" height="35.666666666666629"/>
@@ -186,6 +201,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Login">
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="onLoginButtonClick:" destination="QUp-ZA-JdX" eventType="touchUpInside" id="WCZ-RP-JRq"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -193,6 +211,9 @@
                                                 <rect key="frame" x="296" y="59" width="54" height="44"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="ic_close"/>
+                                                <connections>
+                                                    <action selector="onCloseButtonClick:" destination="QUp-ZA-JdX" eventType="touchUpInside" id="YaL-UL-6uD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -243,6 +264,12 @@
                             <constraint firstItem="es0-sd-1Va" firstAttribute="trailing" secondItem="nVZ-CA-6NG" secondAttribute="trailing" id="roJ-ZC-SH6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordInputFild" destination="VzX-oV-upf" id="e7q-qr-Q1i"/>
+                        <outlet property="emailInputFild" destination="5Pf-yb-Ypy" id="a6a-gJ-dCR"/>
+                        <outlet property="passwordInputFild" destination="Hfc-0f-hpg" id="Z7M-aA-VUD"/>
+                        <outlet property="usernameInputFild" destination="OdJ-dy-VrT" id="Dzo-uS-hhP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epk-ta-IMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
