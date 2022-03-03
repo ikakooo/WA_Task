@@ -31,6 +31,7 @@
 		3B4DC17327D1004E00D00A99 /* DialogAlertsForActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17227D1004E00D00A99 /* DialogAlertsForActions.swift */; };
 		3B4DC17627D1014500D00A99 /* Validator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */; };
 		3B4DC17827D1039300D00A99 /* LogInViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */; };
+		3B4DC17A27D116A400D00A99 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17927D116A400D00A99 /* LogInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		3B4DC17227D1004E00D00A99 /* DialogAlertsForActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertsForActions.swift; sourceTree = "<group>"; };
 		3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validator+Extensions.swift"; sourceTree = "<group>"; };
 		3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewDataService.swift; sourceTree = "<group>"; };
+		3B4DC17927D116A400D00A99 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */,
+				3B4DC17927D116A400D00A99 /* LogInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				3B1FE2DC27CF6D4100707E20 /* AppDelegate.swift in Sources */,
 				3B1FE2E627CF6D4100707E20 /* WA_Task.xcdatamodeld in Sources */,
 				3B1FE31D27CF73E000707E20 /* WelcomeViewController.swift in Sources */,
+				3B4DC17A27D116A400D00A99 /* LogInViewModel.swift in Sources */,
 				3B1FE32727CF8B8C00707E20 /* LogInViewController.swift in Sources */,
 				3B4DC17027D0FE4F00D00A99 /* CreateAccountViewModel.swift in Sources */,
 				3B1FE32227CF830500707E20 /* GradientView.swift in Sources */,
