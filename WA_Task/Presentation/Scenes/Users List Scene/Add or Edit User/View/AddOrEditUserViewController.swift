@@ -8,19 +8,32 @@
 import UIKit
 
 class AddOrEditUserViewController: UIViewController {
+    @IBOutlet weak var usernameInput: FloatingLabelInput!
     
+    @IBOutlet weak var passworInput: FloatingLabelInput!
+    @IBOutlet weak var confirmPassworInput: FloatingLabelInput!
+    @IBOutlet weak var emailInput: FloatingLabelInput!
     
     var edittIngUser: (() -> User?)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureDataSource()
+        configureDataSourceForEditing()
     }
     
 
-    private func configureDataSource() {
+    private func configureDataSourceForEditing() {
         guard let user = edittIngUser?() else { dismiss(animated: true, completion: nil); return}
-        unowned let this =  self
+        title = "Edit User"
+        // unowned let this =  self
+        usernameInput.addFloatingLabel()
+        usernameInput.text = user.username
+        emailInput.addFloatingLabel()
+        emailInput.text = user.email
+        passworInput.addFloatingLabel()
+        passworInput.text = user.password
+        confirmPassworInput.addFloatingLabel()
+        confirmPassworInput.text = user.password
         
         print(user)
 //        onlinePlayerName.text = enemy.name
@@ -34,4 +47,8 @@ class AddOrEditUserViewController: UIViewController {
 //        dataService.refreshAndEtechOnlinePlayer()
     }
     
+    @IBAction func onSaveButtonClick(_ sender: Any) {
+        
+        
+    }
 }

@@ -42,6 +42,7 @@
 		3BD8F8B227D1FF7D00924321 /* UIViewAdditionalFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */; };
 		3BD8F8B527D2056300924321 /* AddOrEditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B427D2056300924321 /* AddOrEditUserViewController.swift */; };
 		3BD8F8B727D2056F00924321 /* AddOrEditUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B627D2056F00924321 /* AddOrEditUserViewController.storyboard */; };
+		3BD8F8BB27D2374800924321 /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8BA27D2374800924321 /* UDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditionalFeatures.swift; sourceTree = "<group>"; };
 		3BD8F8B427D2056300924321 /* AddOrEditUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditUserViewController.swift; sourceTree = "<group>"; };
 		3BD8F8B627D2056F00924321 /* AddOrEditUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddOrEditUserViewController.storyboard; sourceTree = "<group>"; };
+		3BD8F8BA27D2374800924321 /* UDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				3B1FE31527CF70CE00707E20 /* Local Database */,
+				3BD8F8BA27D2374800924321 /* UDManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				3B4DC17C27D123E100D00A99 /* UsersCoreDataManager.swift in Sources */,
 				3B1FE2DE27CF6D4100707E20 /* SceneDelegate.swift in Sources */,
 				3B4DC18827D1529D00D00A99 /* UsersListViewModel.swift in Sources */,
+				3BD8F8BB27D2374800924321 /* UDManager.swift in Sources */,
 				3B1FE32B27CF8C3900707E20 /* FloatingLabelInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

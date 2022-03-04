@@ -12,13 +12,17 @@ class WelcomeViewController: UIViewController, LoginDelegate {
     func logIn() {
         let sb = UIStoryboard(name: "UsersListViewController", bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: "UsersListViewController") as? UsersListViewController else {return}
-        
+        UDManager.markUserAsLoggedIn()
         navigationController?.pushViewController(vc, animated: true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .black
+        
+        if UDManager.isUserLoggedIn() {
+            logIn()
+        }
     }
     @IBAction func onLoginButtonClick(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LogInViewController", bundle: nil)

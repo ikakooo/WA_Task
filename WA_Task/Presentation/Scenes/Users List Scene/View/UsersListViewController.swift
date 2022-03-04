@@ -30,6 +30,7 @@ class UsersListViewController: UIViewController {
         
     }
     @IBAction func onLogOutClick(_ sender: Any) {
+        UDManager.markUserAsLoggedOut()
         navigationController?.popViewController(animated: true)
     }
     
