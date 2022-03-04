@@ -53,6 +53,9 @@
                             </barButtonItem>
                             <barButtonItem image="person.crop.circle.badge.plus" catalog="system" landscapeImage="person.crop.circle.badge.plus" largeContentSizeImage="person.crop.circle.badge.plus" id="b9m-HT-IWT">
                                 <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="onAddUserButtonClick:" destination="Y6W-OH-hqX" id="PkX-XA-m7C"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>

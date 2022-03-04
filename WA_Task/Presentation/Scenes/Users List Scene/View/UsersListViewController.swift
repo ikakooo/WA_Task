@@ -29,9 +29,21 @@ class UsersListViewController: UIViewController {
         dataService.refresh()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        dataService.refresh()
+    }
+    
     @IBAction func onLogOutClick(_ sender: Any) {
         UDManager.markUserAsLoggedOut()
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func onAddUserButtonClick(_ sender: Any) {
+        let sb = UIStoryboard(name: "AddOrEditUserViewController", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "AddOrEditUserViewController") as? AddOrEditUserViewController else {return}
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }

@@ -93,4 +93,30 @@ class UsersCoreDataManager {
         return allUsers
     }
     
+    func delete(user:User) {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        print("Fetching Data..")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try managedContext.fetch(request)
+            for data in result as! [NSManagedObject] {
+                let username = data.value(forKey: "username") as? String
+                let email = data.value(forKey: "email") as? String
+                let password = data.value(forKey: "password") as? String
+                
+                if username == user.password && email == user.email && password == user.password {
+                    managedContext.delete(data)
+                    try managedContext.save()
+                }
+            }
+        } catch {
+            print("Fetching data Failed")
+        }
+    }
+    
 }

@@ -46,7 +46,7 @@ class UsersListDataService: NSObject, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.deque(UserCell.self, for: indexPath)
-        cell.configure(name:  usersList[indexPath.row].username ?? " ")
+        cell.configure(user:  usersList[indexPath.row])
         return cell
     }
     

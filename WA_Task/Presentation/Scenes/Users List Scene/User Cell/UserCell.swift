@@ -9,6 +9,8 @@ import UIKit
 
 class UserCell: UITableViewCell {
     @IBOutlet weak var useNameLabel: UILabel!
+    
+    private var user:User?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,11 +22,13 @@ class UserCell: UITableViewCell {
 
     }
     
-    func configure( name: String){
-        useNameLabel.text = name
+    func configure( user: User){
+        self.user = user
+        useNameLabel.text = user.username
     }
     @IBAction func onDeleteClick(_ sender: Any) {
-        
+        UsersCoreDataManager.shared.delete(user: self.user!)
+
         
     }
     
