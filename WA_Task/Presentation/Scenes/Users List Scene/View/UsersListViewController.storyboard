@@ -47,12 +47,18 @@
                         <rightBarButtonItems>
                             <barButtonItem title="log out" image="rectangle.portrait.and.arrow.right" catalog="system" landscapeImage="rectangle.portrait.and.arrow.right" largeContentSizeImage="rectangle.portrait.and.arrow.right" id="Dgh-dh-kAX">
                                 <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="onLogOutClick:" destination="Y6W-OH-hqX" id="BFC-BZ-z5l"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="person.crop.circle.badge.plus" catalog="system" landscapeImage="person.crop.circle.badge.plus" largeContentSizeImage="person.crop.circle.badge.plus" id="b9m-HT-IWT">
                                 <color key="tintColor" systemColor="labelColor"/>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="usersTableView" destination="U0J-a6-tqE" id="IoT-U3-5Le"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

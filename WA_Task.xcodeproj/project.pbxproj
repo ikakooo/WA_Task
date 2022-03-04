@@ -33,6 +33,13 @@
 		3B4DC17827D1039300D00A99 /* LogInViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */; };
 		3B4DC17A27D116A400D00A99 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17927D116A400D00A99 /* LogInViewModel.swift */; };
 		3B4DC17C27D123E100D00A99 /* UsersCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17B27D123E100D00A99 /* UsersCoreDataManager.swift */; };
+		3B4DC18127D1500D00D00A99 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC17F27D1500D00D00A99 /* UserCell.swift */; };
+		3B4DC18227D1500D00D00A99 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4DC18027D1500D00D00A99 /* UserCell.xib */; };
+		3B4DC18627D151B200D00A99 /* UsersListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18527D151B200D00A99 /* UsersListDataService.swift */; };
+		3B4DC18827D1529D00D00A99 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18727D1529D00D00A99 /* UsersListViewModel.swift */; };
+		3B4DC18A27D1533300D00A99 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18927D1533300D00A99 /* UITableView+Extension.swift */; };
+		3B4DC18C27D1534C00D00A99 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18B27D1534C00D00A99 /* UITableViewCell+Extension.swift */; };
+		3BD8F8B227D1FF7D00924321 /* UIViewAdditionalFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,13 @@
 		3B4DC17727D1039300D00A99 /* LogInViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewDataService.swift; sourceTree = "<group>"; };
 		3B4DC17927D116A400D00A99 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		3B4DC17B27D123E100D00A99 /* UsersCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoreDataManager.swift; sourceTree = "<group>"; };
+		3B4DC17F27D1500D00D00A99 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		3B4DC18027D1500D00D00A99 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		3B4DC18527D151B200D00A99 /* UsersListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListDataService.swift; sourceTree = "<group>"; };
+		3B4DC18727D1529D00D00A99 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		3B4DC18927D1533300D00A99 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3B4DC18B27D1534C00D00A99 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditionalFeatures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +285,7 @@
 			children = (
 				3B1FE32127CF830500707E20 /* GradientView.swift */,
 				3B1FE32A27CF8C3900707E20 /* FloatingLabelInput.swift */,
+				3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */,
 			);
 			path = "Custom UI Components";
 			sourceTree = "<group>";
@@ -314,8 +329,9 @@
 		3B1FE33127CF919100707E20 /* Users List Scene */ = {
 			isa = PBXGroup;
 			children = (
-				3B1FE33227CF91F800707E20 /* UsersListViewController.swift */,
-				3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */,
+				3B4DC17E27D14FB300D00A99 /* User Cell */,
+				3B4DC18427D1513700D00A99 /* View */,
+				3B4DC18327D1513100D00A99 /* ViewModel */,
 			);
 			path = "Users List Scene";
 			sourceTree = "<group>";
@@ -350,8 +366,37 @@
 			isa = PBXGroup;
 			children = (
 				3B4DC17527D1014500D00A99 /* Validator+Extensions.swift */,
+				3B4DC18927D1533300D00A99 /* UITableView+Extension.swift */,
+				3B4DC18B27D1534C00D00A99 /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B4DC17E27D14FB300D00A99 /* User Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DC17F27D1500D00D00A99 /* UserCell.swift */,
+				3B4DC18027D1500D00D00A99 /* UserCell.xib */,
+			);
+			path = "User Cell";
+			sourceTree = "<group>";
+		};
+		3B4DC18327D1513100D00A99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B4DC18527D151B200D00A99 /* UsersListDataService.swift */,
+				3B4DC18727D1529D00D00A99 /* UsersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B4DC18427D1513700D00A99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */,
+				3B1FE33227CF91F800707E20 /* UsersListViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +509,7 @@
 				3B1FE32927CF8BB900707E20 /* LogInViewController.storyboard in Resources */,
 				3B1FE2EB27CF6D4300707E20 /* LaunchScreen.storyboard in Resources */,
 				3B1FE2E827CF6D4300707E20 /* Assets.xcassets in Resources */,
+				3B4DC18227D1500D00D00A99 /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +536,9 @@
 			files = (
 				3B4DC17627D1014500D00A99 /* Validator+Extensions.swift in Sources */,
 				3B1FE2DC27CF6D4100707E20 /* AppDelegate.swift in Sources */,
+				3BD8F8B227D1FF7D00924321 /* UIViewAdditionalFeatures.swift in Sources */,
+				3B4DC18A27D1533300D00A99 /* UITableView+Extension.swift in Sources */,
+				3B4DC18627D151B200D00A99 /* UsersListDataService.swift in Sources */,
 				3B1FE2E627CF6D4100707E20 /* WA_Task.xcdatamodeld in Sources */,
 				3B1FE31D27CF73E000707E20 /* WelcomeViewController.swift in Sources */,
 				3B4DC17A27D116A400D00A99 /* LogInViewModel.swift in Sources */,
@@ -502,8 +551,11 @@
 				3B1FE32E27CF905C00707E20 /* CreateAccountViewController.swift in Sources */,
 				3B4DC16E27D0FE0A00D00A99 /* CreateAccountDataService.swift in Sources */,
 				3B1FE33327CF91F800707E20 /* UsersListViewController.swift in Sources */,
+				3B4DC18127D1500D00D00A99 /* UserCell.swift in Sources */,
+				3B4DC18C27D1534C00D00A99 /* UITableViewCell+Extension.swift in Sources */,
 				3B4DC17C27D123E100D00A99 /* UsersCoreDataManager.swift in Sources */,
 				3B1FE2DE27CF6D4100707E20 /* SceneDelegate.swift in Sources */,
+				3B4DC18827D1529D00D00A99 /* UsersListViewModel.swift in Sources */,
 				3B1FE32B27CF8C3900707E20 /* FloatingLabelInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
