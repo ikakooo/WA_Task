@@ -52,7 +52,7 @@ class LogInViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "CreateAccountViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "CreateAccountViewController") as! CreateAccountViewController
-        
+        viewController.delegate = delegate
         if let presentationController = viewController.presentationController as? UISheetPresentationController {
             presentationController.detents = [.large()] /// set here!
         }
