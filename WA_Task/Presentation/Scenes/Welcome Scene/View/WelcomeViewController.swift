@@ -15,10 +15,13 @@ class WelcomeViewController: UIViewController, LoginDelegate {
         UDManager.markUserAsLoggedIn()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    weak var vc:WelcomeViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .black
+        vc = self
         
         if UDManager.isUserLoggedIn() {
             logIn()
@@ -26,8 +29,8 @@ class WelcomeViewController: UIViewController, LoginDelegate {
     }
     @IBAction func onLoginButtonClick(_ sender: Any) {
         let storyboard = UIStoryboard(name: "LogInViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
-        viewController.delegate = self
+      guard  let viewController = storyboard.instantiateViewController(withIdentifier: "LogInViewController") as? LogInViewController else { return }
+        viewController.delegate = vc
         if let presentationController = viewController.presentationController as? UISheetPresentationController {
             presentationController.detents = [.large()] /// set here!
         }
@@ -39,9 +42,9 @@ class WelcomeViewController: UIViewController, LoginDelegate {
     @IBAction func onCreateAccountClick(_ sender: Any){
         
         let storyboard = UIStoryboard(name: "CreateAccountViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "CreateAccountViewController") as! CreateAccountViewController
+        guard  let viewController = storyboard.instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController else { return }
         
-        viewController.delegate = self
+        viewController.delegate = vc
         
         if let presentationController = viewController.presentationController as? UISheetPresentationController {
             presentationController.detents = [.large()] /// set here!

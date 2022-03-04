@@ -109,7 +109,7 @@ class UsersCoreDataManager {
                 let email = data.value(forKey: "email") as? String
                 let password = data.value(forKey: "password") as? String
                 
-                if username == user.password && email == user.email && password == user.password {
+                if username == user.username && email == user.email && password == user.password {
                     managedContext.delete(data)
                     try managedContext.save()
                 }

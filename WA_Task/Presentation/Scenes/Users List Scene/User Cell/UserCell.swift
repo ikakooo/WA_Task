@@ -11,6 +11,7 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var useNameLabel: UILabel!
     
     private var user:User?
+    weak var delegate: UserTableViewCellUpdaterDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +30,11 @@ class UserCell: UITableViewCell {
     @IBAction func onDeleteClick(_ sender: Any) {
         UsersCoreDataManager.shared.delete(user: self.user!)
 
-        
+        delegate?.updateTableView()
     }
     
+}
+
+protocol UserTableViewCellUpdaterDelegate: UsersListDataService { 
+    func updateTableView()
 }

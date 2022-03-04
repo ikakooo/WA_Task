@@ -7,7 +7,13 @@
 
 import UIKit
 
-class UsersListDataService: NSObject, UITableViewDataSource, UITableViewDelegate {
+class UsersListDataService: NSObject, UITableViewDataSource, UITableViewDelegate, UserTableViewCellUpdaterDelegate {
+    
+    
+    func updateTableView() {
+        refresh()
+    }
+    
     
     
     private var controller: UIViewController!
@@ -46,6 +52,7 @@ class UsersListDataService: NSObject, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.deque(UserCell.self, for: indexPath)
+        cell.delegate = self
         cell.configure(user:  usersList[indexPath.row])
         return cell
     }

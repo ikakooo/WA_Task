@@ -63,7 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B1FE2D827CF6D4100707E20 /* WA_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1FE2D827CF6D4100707E20 /* WA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1FE2DB27CF6D4100707E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B1FE2DD27CF6D4100707E20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3B1FE2E527CF6D4100707E20 /* WA_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WA_Task.xcdatamodel; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		3B1FE2D927CF6D4100707E20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B1FE2D827CF6D4100707E20 /* WA_Task.app */,
+				3B1FE2D827CF6D4100707E20 /* WA.app */,
 				3B1FE2F127CF6D4300707E20 /* WA_TaskTests.xctest */,
 				3B1FE2FB27CF6D4300707E20 /* WA_TaskUITests.xctest */,
 			);
@@ -449,7 +449,7 @@
 			);
 			name = WA_Task;
 			productName = WA_Task;
-			productReference = 3B1FE2D827CF6D4100707E20 /* WA_Task.app */;
+			productReference = 3B1FE2D827CF6D4100707E20 /* WA.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3B1FE2F027CF6D4300707E20 /* WA_TaskTests */ = {
@@ -695,6 +695,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = WA;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -749,6 +750,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = WA;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -776,7 +778,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.WA-Task";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -803,7 +805,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.WA-Task";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
