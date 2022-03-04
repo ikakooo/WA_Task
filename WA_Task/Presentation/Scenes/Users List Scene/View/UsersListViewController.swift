@@ -30,8 +30,7 @@ class UsersListViewController: UIViewController {
         
     }
     @IBAction func onLogOutClick(_ sender: Any) {
-        
-        
+        navigationController?.popViewController(animated: true)
     }
     
 }

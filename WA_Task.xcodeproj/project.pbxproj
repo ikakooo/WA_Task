@@ -40,6 +40,8 @@
 		3B4DC18A27D1533300D00A99 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18927D1533300D00A99 /* UITableView+Extension.swift */; };
 		3B4DC18C27D1534C00D00A99 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DC18B27D1534C00D00A99 /* UITableViewCell+Extension.swift */; };
 		3BD8F8B227D1FF7D00924321 /* UIViewAdditionalFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */; };
+		3BD8F8B527D2056300924321 /* AddOrEditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B427D2056300924321 /* AddOrEditUserViewController.swift */; };
+		3BD8F8B727D2056F00924321 /* AddOrEditUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8F8B627D2056F00924321 /* AddOrEditUserViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		3B4DC18927D1533300D00A99 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3B4DC18B27D1534C00D00A99 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		3BD8F8B127D1FF7C00924321 /* UIViewAdditionalFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditionalFeatures.swift; sourceTree = "<group>"; };
+		3BD8F8B427D2056300924321 /* AddOrEditUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditUserViewController.swift; sourceTree = "<group>"; };
+		3BD8F8B627D2056F00924321 /* AddOrEditUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddOrEditUserViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +333,7 @@
 		3B1FE33127CF919100707E20 /* Users List Scene */ = {
 			isa = PBXGroup;
 			children = (
+				3BD8F8B327D2052C00924321 /* Add or Edit User */,
 				3B4DC17E27D14FB300D00A99 /* User Cell */,
 				3B4DC18427D1513700D00A99 /* View */,
 				3B4DC18327D1513100D00A99 /* ViewModel */,
@@ -395,6 +400,31 @@
 			children = (
 				3B1FE33427CF920300707E20 /* UsersListViewController.storyboard */,
 				3B1FE33227CF91F800707E20 /* UsersListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BD8F8B327D2052C00924321 /* Add or Edit User */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8F8B927D205C500924321 /* View */,
+				3BD8F8B827D205BE00924321 /* ViewModel */,
+			);
+			path = "Add or Edit User";
+			sourceTree = "<group>";
+		};
+		3BD8F8B827D205BE00924321 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BD8F8B927D205C500924321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8F8B427D2056300924321 /* AddOrEditUserViewController.swift */,
+				3BD8F8B627D2056F00924321 /* AddOrEditUserViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,6 +536,7 @@
 				3B1FE33527CF920300707E20 /* UsersListViewController.storyboard in Resources */,
 				3B1FE31F27CF73F000707E20 /* WelcomeViewController.storyboard in Resources */,
 				3B1FE33027CF907300707E20 /* CreateAccountViewController.storyboard in Resources */,
+				3BD8F8B727D2056F00924321 /* AddOrEditUserViewController.storyboard in Resources */,
 				3B1FE32927CF8BB900707E20 /* LogInViewController.storyboard in Resources */,
 				3B1FE2EB27CF6D4300707E20 /* LaunchScreen.storyboard in Resources */,
 				3B1FE2E827CF6D4300707E20 /* Assets.xcassets in Resources */,
@@ -548,6 +579,7 @@
 				3B4DC17327D1004E00D00A99 /* DialogAlertsForActions.swift in Sources */,
 				3B4DC17827D1039300D00A99 /* LogInViewDataService.swift in Sources */,
 				3B1FE31827CF726700707E20 /* User.swift in Sources */,
+				3BD8F8B527D2056300924321 /* AddOrEditUserViewController.swift in Sources */,
 				3B1FE32E27CF905C00707E20 /* CreateAccountViewController.swift in Sources */,
 				3B4DC16E27D0FE0A00D00A99 /* CreateAccountDataService.swift in Sources */,
 				3B1FE33327CF91F800707E20 /* UsersListViewController.swift in Sources */,

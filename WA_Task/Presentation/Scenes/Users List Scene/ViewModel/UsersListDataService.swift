@@ -52,12 +52,12 @@ class UsersListDataService: NSObject, UITableViewDataSource, UITableViewDelegate
     
     // Cell click listener
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let sb = UIStoryboard(name: "OnlineGameBoardViewController", bundle: nil)
-//        guard let vc = sb.instantiateViewController(withIdentifier: "OnlineGameBoardViewController") as? OnlineGameBoardViewController else {return}
-//
-//        vc.playerEnemy = { [ weak self] in  return self?.gamePlayers[indexPath.row]}
-//
-//        self.controller.navigationController?.pushViewController(vc, animated: true)
+        let sb = UIStoryboard(name: "AddOrEditUserViewController", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "AddOrEditUserViewController") as? AddOrEditUserViewController else {return}
+
+        vc.edittIngUser = { [ weak self] in  return self?.usersList[indexPath.row]}
+
+        self.controller.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
