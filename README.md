@@ -1,1 +1,16 @@
 # WA_Task
+
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32](https://user-images.githubusercontent.com/43764577/156884459-520950a5-c3bc-4ad7-953b-12e46f70a7d5.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (1)](https://user-images.githubusercontent.com/43764577/156884487-09d5ed29-6156-4cdf-95ad-c35452a11ecf.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (2)](https://user-images.githubusercontent.com/43764577/156884496-8f54340d-7319-46f9-b166-edc29c365447.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (3)](https://user-images.githubusercontent.com/43764577/156884503-ea1e770a-91d5-496a-a319-4e97a7790fce.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (4)](https://user-images.githubusercontent.com/43764577/156884504-34daa56f-5e57-4d9d-9ae2-0ce0e32f7946.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (5)](https://user-images.githubusercontent.com/43764577/156884510-61b1d5a7-b654-4715-b8ca-4680f9dc9d97.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (6)](https://user-images.githubusercontent.com/43764577/156884524-bb6f1dba-696e-4200-ac2e-2f0bd3fa5258.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (7)](https://user-images.githubusercontent.com/43764577/156884562-ae8e9183-955a-499f-af56-8723346c68d8.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (8)](https://user-images.githubusercontent.com/43764577/156884571-0e464d52-c019-46f2-9d78-19933489a507.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (9)](https://user-images.githubusercontent.com/43764577/156884577-dac75f22-e488-4146-b32c-161395c0ee72.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (10)](https://user-images.githubusercontent.com/43764577/156884584-4b006df3-80b7-44d6-8ff4-ea5062175b51.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (11)](https://user-images.githubusercontent.com/43764577/156884588-c48e2b8d-c6fc-42a4-b9ec-6a3bb603c78b.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (12)](https://user-images.githubusercontent.com/43764577/156884603-d49cef85-4a89-4889-b40b-cb622d021eb8.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-03-05 at 01 32 (13)](https://user-images.githubusercontent.com/43764577/156884609-1579416b-c2e8-426b-88f4-b46aa49cb251.gif)
